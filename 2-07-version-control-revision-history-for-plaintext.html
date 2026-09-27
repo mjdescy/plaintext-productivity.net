@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="http://schema.org/book" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Version Control (Revision History) for Plaintext Notes and Drafts | Plaintext Productivity</title>
+<meta name="keywords" content="notes, drafts, version control, revision history" />
+<meta name="description" content="How to set up version control for plaintext notes and drafts." />
+<meta name="language" content="EN" />
+<meta name="robots" content="index,follow" />
+<meta name="news_keywords" content="plaintext, productivity system" />
+<meta name="google-analytics" content="UA-10779320-2" />
+
+<link rel="canonical" href="http://plaintext-productivity.net/2-07-version-control-revision-history-for-plaintext.html" />
+<link rel="index" title="Plaintext Productivity" href="http://plaintext-productivity.net" />
+<link rel="previous" title="Other Sublime Text Features and Packages for Writers" href="./2-06-sublime-text-features-and-packages-of-interest-to-writers.html" />
+<link rel="next" title="How to Set Up Git and Sublime Text for Version Control" href="./2-08-how-to-set-up-git-and-sublime-text-for-version-control.html" />
+
+<link rel="author" type="text/html" href="https://mjdescy.me" />
+<link rel="me" type="text/html" href="https://mjdescy.me" />
+
+<meta property="og:url" content="http://plaintext-productivity.net/2-07-version-control-revision-history-for-plaintext.html" />
+<meta property="og:image" content="./assets/file.svg" />
+<meta property="og:description" content="Set up a version control system to retrieve prior versions of your notes and drafts." />
+<meta property="og:title" content="Version Control (Revision History) for Plaintext Notes and Drafts" />
+<meta property="og:site_name" content="Plaintext Productivity" />
+<meta property="og:see_also" content="http://plaintext-productivity.net" />
+<meta property=”fb:admins” content="772894805" />
+
+<meta itemprop="name" content="Plaintext Productivity | Version Control (Revision History) for Plaintext Notes and Drafts" />
+<meta itemprop="description" content="How to set up version control for plaintext notes and drafts." />
+<meta itemprop="image" content="http://plaintext-productivity.net/assets/file.png" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:title" content="Plaintext Productivity | Version Control (Revision History) for Plaintext Notes and Drafts" />
+<meta name="twitter:description" content="Set up a version control system to retrieve prior versions of your notes and drafts." />
+<meta name="twitter:creator" content="mjdescy" />
+<meta name="twitter:image:src" content="http://plaintext-productivity.net/assets/file.png" />
+<meta name="twitter:image:width" content="64" />
+<meta name="twitter:image:height" content="64" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" /> 
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1388369525000.css">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-10779320-2', 'plaintext-productivity.net');
+ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<header role="banner">
+<h1 id="title"><a href="./">Plaintext Productivity</a></h1>
+<ul class="navbar">
+<li><a href="/">Home</a>
+<li><a href="./1-00-tasks-introduction.html">Tasks</a>
+<li><a href="./2-00-notes-and-drafts-introduction.html">Notes and Drafts</a>
+<li><a href="./3-00-files-introduction.html">Documents and Files</a>
+<li><a href="./4-00-other-tips.html">Other Tips</a>
+<li><a href="./5-00-about-me.html">About</a>
+</ul>
+</header>
+<div role="main">
+<h1 class="notes">Version Control (Revision History) for Plaintext Notes and Drafts</h1>
+<div class="callout">Set up a version control system to retrieve prior versions of your notes and drafts.</div>
+<h2 id="what-is-version-control-">What is version control?</h2>
+<p><a href="http://en.wikipedia.org/wiki/Revision_control">Version control</a> is an essential element to my plaintext notes system. Saving intermediate versions of your files, either in a version control system or in incremental backups, helps protect you from accidental deletions and changes to your notes that inevitably occur. I don&#39;t use my old revisions that often, but when I do, I am <em>extremely</em> grateful for them.</p>
+<h2 id="version-control-options">Version control options</h2>
+<p>There are several options for version control on Windows. Feel free to use one or more of the following methods, listed from the least amount of effort to the most amount of effort required to set them up.</p>
+<h3 id="windows-shadow-copy">Windows Shadow Copy</h3>
+<p><a href="http://en.wikipedia.org/wiki/Shadow_Copy">Windows Shadow Copy</a> saves multiple versions of your files, but only if it is set up to do so. This feature has never been set up on any work computer I&#39;ve used, so I can&#39;t cover it here or remark upon its usefulness.</p>
+<h3 id="dropbox">Dropbox</h3>
+<p>The cloud file syncing service <a href="http://www.dropbox.com">Dropbox</a>, beyond just syncing files between devices, also saves snapshots of your files each time you save them. You can view previous versions on its web site or from within top-notch Dropbox-enabled apps like <a href="http://omz-software.com/editorial/">Editorial</a> on iPad. For most people, this is all the version control they need, and I highly recommend using it. </p>
+<p>The downside To Dropbox, though, is that you have to send your files to Dropbox, which is a third party. That may not be appropriate for work notes, which, in my case, are highly confidential. For that reason alone I do not put my work notes into Dropbox, and have to look elsewhere for revision history. Also, if you are in a locked-down computing environment, you might not be able to install or access Dropbox on your work computer.</p>
+<p>If you <em>can</em> use Dropbox for your files, I heartily encourage you to do so. (Sign up with my <a href="https://db.tt/LRMfKUs1">referral link</a>!) You get an offsite backup, automatic revision history, and compatibility with hundreds of mobile and web apps.</p>
+<h3 id="sublime-text-package-local-history">Sublime Text package: Local History</h3>
+<p>If you want something <em>simple</em> that provides version control of your most recent notes <em>on our own computer</em>, the <a href="https://github.com/vishr/local-history/">Local History</a> package is for you.</p>
+<p>Local History creates a copy of your files every time you modify them in Sublime Text. Each file revision is stored in a separate file (with full path) inside the .sublime/history folder within your home directory (that is, typically, C:\Users\MyUserName\.sublime\history). (You may want to exclude that folder from Windows Searches.)</p>
+<p>By right-clicking anywhere in your document, or via the Command Palette (type <code>control+shift+p</code> then select the &quot;Local History: Incremental Diff&quot; command), you can call up Local History to browse revisions, or, even better, to view an incremental <a href="http://en.wikipedia.org/wiki/Diff">diff</a>, which are the differences between your current file and any prior version from the history.</p>
+<p>Step 1: Pull a diff from the menu.</p>
+<p><img src="./assets/st-menu-local-history.png" alt="Local History menu"></p>
+<p>Step 2: Select the prior version to compare your file to.</p>
+<p><img src="./assets/st-local-history-revision-list.png" alt="Local History revisions list"></p>
+<p>Step 3: View the diff.</p>
+<p><img src="./assets/st-local-history-diff.png" alt="Incremental Diff"></p>
+<p>I use Local History in addition to the next option, Git, to provide a belt-and-suspenders approach to version history.</p>
+<h3 id="git">Git</h3>
+<p>If you know what <a href="http://git-scm.com">Git</a> is, you may want to use it for your plaintext files. See <a href="./2-08-how-to-set-up-git-and-sublime-text-for-version-control.html">the next article</a> for instructions how to set up Git for version control.</p>
+
+<div role="navigation" id="article_nav">
+<a id="previous" href="./2-06-sublime-text-features-and-packages-of-interest-to-writers.html" title="Other Sublime Text Features and Packages for Writers">Previous</a>
+<a id="next" href="./2-08-how-to-set-up-git-and-sublime-text-for-version-control.html" title="How to Set Up Git and Sublime Text for Version Control">Next</a>
+</div>
+</div>
+<div class="social_navbar">
+<ul>
+<span>Share:</span>
+<li><a class="facebook" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://plaintext-productivity.net/2-07-version-control-revision-history-for-plaintext.html" target="_blank">Facebook</a></li>
+<li><a class="twitter" title="Share on Twitter" href="https://www.twitter.com/share?url=http://plaintext-productivity.net/2-07-version-control-revision-history-for-plaintext.html" target="_blank">Twitter</a></li>
+<li><a class="reddit" href="http://www.reddit.com/submit" onclick="window.location='http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">Reddit</a></li>
+<li><a class="pinterest" href="//www.pinterest.com/pin/create/button/?url=http://plaintext-productivity.net/2-07-version-control-revision-history-for-plaintext.html" target="_blank">Pinterest</a></li>
+<li><a class="linkedin" title="Share on LinkedIn" href="http://www.linkedin.com/shareArticle?mini=true&title=Plaintext Productivity%20%3E%20Version Control (Revision History) for Plaintext Notes and Drafts&url=http://plaintext-productivity.net/2-07-version-control-revision-history-for-plaintext.html" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+<footer>
+<div id="author">
+<address>Written by <a href="https://mjdescy.me">Michael Descy</a> &copy; 2013-2021 All Rights Reserved</address>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+	"cmd": ["pandoc.exe", "-S", "-s", "-f", "markdown", "-t", "docx", "-o", "C:/Users/MyUserName/Documents/Docs/@Inbox/$file_base_name.docx", "$file_name"],
+	"selector": "text.html.markdown"
+}

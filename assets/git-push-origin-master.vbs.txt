@@ -1,0 +1,4 @@
+Set WinScriptHost = CreateObject("WScript.Shell")
+WinScriptHost.CurrentDirectory = "C:\Users\MyUserName\Documents\Docs\@Archive\2013\@Drafts"
+Return = WinScriptHost.Run("git push -u origin master", 0, true)
+Set WinScriptHost = Nothing

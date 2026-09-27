@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="http://schema.org/book" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Autocorrection and Text Expansion with AutoHotKey | Plaintext Productivity</title>
+<meta name="keywords" content="password, manager" />
+<meta name="description" content="Use AutoHotKey to improve your typing speed and accuracy." />
+<meta name="language" content="EN" />
+<meta name="robots" content="index,follow" />
+<meta name="news_keywords" content="plaintext, productivity system" />
+<meta name="google-analytics" content="UA-10779320-2" />
+
+<link rel="canonical" href="http://plaintext-productivity.net/4-04-autocorrection-and-text-expansion-with-autohotkey.html" />
+<link rel="index" title="Plaintext Productivity" href="http://plaintext-productivity.net" />
+<link rel="previous" title="Password Manager" href="./4-03-password-manager.html" />
+<link rel="next" title="Hardware" href="./4-05-hardware.html" />
+
+<link rel="author" type="text/html" href="https://mjdescy.me" />
+<link rel="me" type="text/html" href="https://mjdescy.me" />
+
+<meta property="og:url" content="http://plaintext-productivity.net/4-04-autocorrection-and-text-expansion-with-autohotkey.html" />
+<meta property="og:image" content="./assets/file.svg" />
+<meta property="og:description" content="Use AutoHotKey to improve your typing speed and accuracy." />
+<meta property="og:title" content="Autocorrection and Text Expansion with AutoHotKey" />
+<meta property="og:site_name" content="Plaintext Productivity" />
+<meta property="og:see_also" content="http://plaintext-productivity.net" />
+<meta property=”fb:admins” content="772894805" />
+
+<meta itemprop="name" content="Plaintext Productivity | Autocorrection and Text Expansion with AutoHotKey" />
+<meta itemprop="description" content="Use AutoHotKey to improve your typing speed and accuracy." />
+<meta itemprop="image" content="http://plaintext-productivity.net/assets/file.png" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:title" content="Plaintext Productivity | Autocorrection and Text Expansion with AutoHotKey" />
+<meta name="twitter:description" content="Use AutoHotKey to improve your typing speed and accuracy." />
+<meta name="twitter:creator" content="mjdescy" />
+<meta name="twitter:image:src" content="http://plaintext-productivity.net/assets/file.png" />
+<meta name="twitter:image:width" content="64" />
+<meta name="twitter:image:height" content="64" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" /> 
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1388369525000.css">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-10779320-2', 'plaintext-productivity.net');
+ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<header role="banner">
+<h1 id="title"><a href="./">Plaintext Productivity</a></h1>
+<ul class="navbar">
+<li><a href="/">Home</a>
+<li><a href="./1-00-tasks-introduction.html">Tasks</a>
+<li><a href="./2-00-notes-and-drafts-introduction.html">Notes and Drafts</a>
+<li><a href="./3-00-files-introduction.html">Documents and Files</a>
+<li><a href="./4-00-other-tips.html">Other Tips</a>
+<li><a href="./5-00-about-me.html">About</a>
+</ul>
+</header>
+<div role="main">
+<h1 class="other">Autocorrection and Text Expansion with AutoHotKey</h1>
+<div class="callout">Use AutoHotKey to improve your typing speed and accuracy.</div>
+<h2 id="improve-typing-speed-and-accuracy">Improve typing speed and accuracy</h2>
+<p>Even if you are a good touch-typist, you will make typos, misspell words and generally have to re-type the same words and phrases often throughout your work day. On your smartphone, the keyboard application tries to predict what you are typing and auto-corrects what you enter to improve your typing accuracy. Wouldn&#39;t it be nice to have Windows software that helps you type more quickly and accurately <em>in any application</em>, including your go-to plaintext editor. Luckily, there are some utilities out there to handle auto-correction and text expansion. The free utility AutoHotKey can be set up for both functions, and a whole lot more.</p>
+<h3 id="autohotkey">AutoHotKey</h3>
+<p><a href="http://www.autohotkey.com">AutoHotKey</a> allows you to create simple utility programs for Windows using its own scripting language. The scripts are stored as plaintext files (with .ahk extensions). This means that it is a little more difficult to set up than a packaged utility program, but it is a lot more powerful: it can automate a host of different things, and takes up hardly any system resources on your machine.</p>
+<p>AutoHotKey is supported by a large community (meaning you can find numerous free AutoHotKey scripts online to do various things). You can can download and modify a couple template files to create scripts for auto-correction and text expansion.</p>
+<h2 id="organizing-your-scripts-and-starting-them-on-login">Organizing your scripts and starting them on login</h2>
+<p>You can save AutoHotKey scripts anywhere on your system. I recommend creating an &quot;AutoHotKey Scripts&quot; folder in your home directory, and storing all your scripts there.</p>
+<h3 id="auto-correction-correct-common-misspellings-and-typos-in-any-app-as-you-type-">Auto-correction: Correct common misspellings and typos, in any app, as you type.</h3>
+<p>AutoHotKey handles auto-correction invisibly: it will just replace mistyped words with correctly typed ones, wherever you type them. To set this up, follow the steps below:</p>
+<ol>
+<li>Download the <a href="http://www.autohotkey.com/download/AutoCorrect.ahk">AutoCorrect.ahk</a> script from AutoHotKey&#39;s web site.</li>
+<li>Move AutoCorrect.ahk to your &quot;AutoHotKey Scripts&quot; folder, or wherever you would like to keep your AutoHotKey scripts.</li>
+<li>Double-click the script to run it. Make sure that .ahk scripts are associated (that is, will open with) AutoHotKey.</li>
+<li>To start this script on login, drag it to the Start Menu &gt; All Programs &gt; Startup.</li>
+</ol>
+<h3 id="text-expansion-make-repetitive-text-entry-faster-and-easier-">Text expansion: Make repetitive text entry faster and easier.</h3>
+<p>Tip: for your own personal text expander shortcuts, start them with a character you don&#39;t often use, such as &quot;;&quot; or &quot;`&quot;.</p>
+<ol>
+<li>Download the <a href="./assets/textexpander.ahk">TextExpander.ahk</a> script. Customize it to contain the text expansion shortcuts you need.</li>
+<li>Move TextExpander.ahk to your &quot;AutoHotKey Scripts&quot; folder, or wherever you would like to keep your AutoHotKey scripts.</li>
+<li>Double-click the script to run it. Make sure that .ahk scripts are associated (that is, will open with) AutoHotKey.</li>
+<li>To start this script on login, drag it to the Start Menu &gt; All Programs &gt; Startup.</li>
+<li>Edit the script to add new text expansion shortcuts.</li>
+</ol>
+<p>Other options on Windows:</p>
+<ul>
+<li><a href="http://www.phraseexpress.com">PhraseExpress</a></li>
+<li><a href="http://www.16software.com/breevy/">Breevy</a></li>
+</ul>
+<h3 id="paste-as-plaintext-paste-richtext-into-other-applications-without-formatting-">Paste as plaintext: Paste richtext into other applications without formatting.</h3>
+<p>I still see people paste text into Notepad to remove formatting, and then copy-and-paste it elsewhere. Save yourself a step and use an AutoHotKey script instead. <code>Windows-v</code> will paste any text on the clipboard as plaintext.</p>
+<ol>
+<li>Download the <a href="./assets/paste-as-plaintext.ahk">paste-as-plaintext.ahk</a> script.</li>
+<li>Move paste-as-plaintext.ahk to your &quot;AutoHotKey Scripts&quot; folder, or wherever you would like to keep your AutoHotKey scripts.</li>
+<li>Double-click the script to run it. Make sure that .ahk scripts are associated (that is, will open with) AutoHotKey.</li>
+<li>To start this script on login, drag it to the Start Menu &gt; All Programs &gt; Startup.</li>
+</ol>
+
+<div role="navigation" id="article_nav">
+<a id="previous" href="./4-03-password-manager.html" title="Password Manager">Previous</a>
+<a id="next" href="./4-05-hardware.html" title="Hardware">Next</a>
+</div>
+</div>
+<div class="social_navbar">
+<ul>
+<span>Share:</span>
+<li><a class="facebook" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://plaintext-productivity.net/4-04-autocorrection-and-text-expansion-with-autohotkey.html" target="_blank">Facebook</a></li>
+<li><a class="twitter" title="Share on Twitter" href="https://www.twitter.com/share?url=http://plaintext-productivity.net/4-04-autocorrection-and-text-expansion-with-autohotkey.html" target="_blank">Twitter</a></li>
+<li><a class="reddit" href="http://www.reddit.com/submit" onclick="window.location='http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">Reddit</a></li>
+<li><a class="pinterest" href="//www.pinterest.com/pin/create/button/?url=http://plaintext-productivity.net/4-04-autocorrection-and-text-expansion-with-autohotkey.html" target="_blank">Pinterest</a></li>
+<li><a class="linkedin" title="Share on LinkedIn" href="http://www.linkedin.com/shareArticle?mini=true&title=Plaintext Productivity%20%3E%20Autocorrection and Text Expansion with AutoHotKey&url=http://plaintext-productivity.net/4-04-autocorrection-and-text-expansion-with-autohotkey.html" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+<footer>
+<div id="author">
+<address>Written by <a href="https://mjdescy.me">Michael Descy</a> &copy; 2013-2021 All Rights Reserved</address>
+</div>
+</footer>
+</body>
+</html>

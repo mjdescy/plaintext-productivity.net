@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="http://schema.org/book" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>How To Set Up Sublime Text for Markdown Editing | Plaintext Productivity</title>
+<meta name="keywords" content="notes, drafts, Markdown, Sublime Text, packages, how to" />
+<meta name="description" content="How to set up Sublime Text for Markdown editing." />
+<meta name="language" content="EN" />
+<meta name="robots" content="index,follow" />
+<meta name="news_keywords" content="plaintext, productivity system" />
+<meta name="google-analytics" content="UA-10779320-2" />
+
+<link rel="canonical" href="http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html" />
+<link rel="index" title="Plaintext Productivity" href="http://plaintext-productivity.net" />
+<link rel="previous" title="Windows Markdown Editors" href="./2-03-windows-markdown-editors.html" />
+<link rel="next" title="How To Set Up Sublime Text for Markdown Export to Word" href="./2-05-how-to-set-up-sublime-text-for-markdown-export-to-word.html" />
+
+<link rel="author" type="text/html" href="https://mjdescy.me" />
+<link rel="me" type="text/html" href="https://mjdescy.me" />
+
+<meta property="og:url" content="http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html" />
+<meta property="og:image" content="./assets/file.svg" />
+<meta property="og:description" content="Install some packages to set up Sublime Text for Markdown editing." />
+<meta property="og:title" content="How To Set Up Sublime Text for Markdown Editing" />
+<meta property="og:site_name" content="Plaintext Productivity" />
+<meta property="og:see_also" content="http://plaintext-productivity.net" />
+<meta property=”fb:admins” content="772894805" />
+
+<meta itemprop="name" content="Plaintext Productivity | How To Set Up Sublime Text for Markdown Editing" />
+<meta itemprop="description" content="How to set up Sublime Text for Markdown editing." />
+<meta itemprop="image" content="http://plaintext-productivity.net/assets/file.png" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:title" content="Plaintext Productivity | How To Set Up Sublime Text for Markdown Editing" />
+<meta name="twitter:description" content="Install some packages to set up Sublime Text for Markdown editing." />
+<meta name="twitter:creator" content="mjdescy" />
+<meta name="twitter:image:src" content="http://plaintext-productivity.net/assets/file.png" />
+<meta name="twitter:image:width" content="64" />
+<meta name="twitter:image:height" content="64" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" /> 
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1388369525000.css">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-10779320-2', 'plaintext-productivity.net');
+ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+<header role="banner">
+<h1 id="title"><a href="./">Plaintext Productivity</a></h1>
+<ul class="navbar">
+<li><a href="/">Home</a>
+<li><a href="./1-00-tasks-introduction.html">Tasks</a>
+<li><a href="./2-00-notes-and-drafts-introduction.html">Notes and Drafts</a>
+<li><a href="./3-00-files-introduction.html">Documents and Files</a>
+<li><a href="./4-00-other-tips.html">Other Tips</a>
+<li><a href="./5-00-about-me.html">About</a>
+</ul>
+</header>
+<div role="main">
+<h1 class="notes">How To Set Up Sublime Text for Markdown Editing</h1>
+<div class="callout">Install some packages to set up Sublime Text for Markdown editing.</div>
+<p>Freshly installed, Sublime Text doesn&#39;t offer any specific Markdown support&mdash;no syntax highlighting, no special italic or bold formatting, no keyboard shortcuts, and no HTML preview or output. You can add a fantastic Markdown editing theme, inline preview (almost like <a href="http://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a>), keyboard shortcuts, list autocompletion, in-browser preview, and many more features. You have to install a few packages and configure a few preference files to set everything up. To the new user, how to do this is completely mystifying, which is why I will walk through the whole process below.</p>
+<h2 id="how-to-install-packages">How to install packages</h2>
+<h3 id="first-install-package-control-the-sublime-text-package-manager">First, install Package Control, the Sublime Text package manager</h3>
+<p>There is an easy-to-use package installer, but it is not immediately obvious how to install it, or even how to use it if you are a Sublime Text novice. You have to: pull up the Python console (either type ``control+``` or click through the menus View &gt; Show Console), paste in some Python script, and execute it (<a href="https://sublime.wbond.net/">follow the installation instructions here</a>).</p>
+<p>Step 1: The Python console in Sublime Text.</p>
+<p><img src="./assets/st-console-empty.png" alt="Sublime Text&#39;s console"></p>
+<p>Step 2: Sublime Text&#39;s console with the Package Control installation command in it. Press <code>enter</code> at this point, the restart Sublime Text when the script is done.</p>
+<p><img src="./assets/st-console-install-package-control.png" alt="Sublime Text&#39;s console with the Package Control installation command in it"></p>
+<p>(If you never heard of Python, don&#39;t know what Python is, and don&#39;t know what a console is for that matter, don&#39;t worry. This is the only time you have to reach into the world that only software developers call home.)</p>
+<h3 id="how-to-install-a-package-using-package-control">How to install a package using Package Control</h3>
+<p>After installing Package Control, you can install a package with a simple process:</p>
+<ol>
+<li><p>Type <code>control+shift+p</code> top open the Command Palette.</p>
+<p> <img src="./assets/st-command-palette.png" alt="Command Palette"></p>
+</li>
+<li><p>Start typing &quot;<code>install</code>&quot;. As you type, the Command Palette filters down commands to those containing the characters you type.</p>
+<p> <img src="./assets/st-package-control-install.png" alt="Package Control: Install"></p>
+</li>
+<li><p>Select the command &quot;Package Control: Install&quot; and press <code>enter</code>.</p>
+</li>
+<li><p>After a moment, the Command Palette will be filled with package names. </p>
+</li>
+<li><p>Start typing the name of the package you want to install, or a keyword such as &quot;markdown&quot; to list all packages with the keyword in their names.</p>
+</li>
+<li><p>Select the package you want (with the arrow keys), press <code>enter</code>, and the package will be downloaded and installed.</p>
+<p> <img src="./assets/st-package-install-markdownediting.png" alt="Choosing a package to install"></p>
+</li>
+<li><p>Close and restart Sublime Text for the newly installed package to be activated.</p>
+</li>
+</ol>
+<h2 id="how-to-configure-packages">How to configure packages</h2>
+<p>The way Sublime Text handles preferences (including package settings) is unique and powerful. It is also one of the most complex preference systems I have ever seen.</p>
+<p>All of Sublime Text&#39;s preferences are written in <a href="http://www.json.org">JSON</a> files that open in the editor itself. JSON files are very easy to read. Comments are prefaced with double-slashes (<code>//</code>), and the preferences are just name-value pairs, separated by commas. The format is easy to follow, and the default settings files are very well documented with comments that explain what each setting does. I use the built-in Find command (<code>control+f</code>) to search for whatever settings I want to tweak. </p>
+<p>Sublime Text, plus every plugin, project, and syntax type have their own settings files. This allows you to make the editor look and work completely differently for different types of text files. This is essential for supporting multiple programming languages, and works the same way for plaintext (.txt files) and Markdown (.md). On Windows, you access Sublime Text&#39;s settings files under the Preferences menu.</p>
+<p><img src="./assets/st-menu-preferences.png" alt="Sublime Text&#39;s Preferences menu"></p>
+<p>Not only are there many different places for settings, there are also two files for each setting type. There is a &quot;default&quot; settings file, and a &quot;user&quot; settings file that overrides the default. You should only makes changes to the &quot;user&quot; settings files, because the default settings files can/will get overwritten if you update Sublime Text or its plugins. You have to learn to look up the preference you want in the &quot;default&quot; settings file, then enter your preferences in the corresponding &quot;user&quot; settings files. If you don&#39;t do so, you will lose your settings when the plugin auto-updates.</p>
+<p>Preferences apply in a cascading manner, with general preferences (such as Sublime Text&#39;s global settings) being overridden by more specific settings (such as project settings, then syntax-specific settings), with &quot;user&quot; settings always overriding &quot;default&quot; settings. What you end up with are settings being pulled from a multitude of files (mostly from the default files that come with the editor or the packages you install, with some key overrides coming from from the user settings files that you write), based on the document you are working on.</p>
+<h2 id="install-the-markdownediting-package">Install the MarkdownEditing package</h2>
+<p>The &quot;MarkdownEditing&quot; package provides most, but not all, of the Markdown functionality you need to Sublime Text. It is simple to install:</p>
+<ol>
+<li><p>Using Package Control, (<a href="#howtoinstallapackage">following the instructions above</a>), install the package called &quot;MarkdownEditing&quot;. Those steps would be:</p>
+<ol>
+<li>Type control+shift+p to call up the Command Palette.</li>
+<li>Type &quot;install&quot; and hit <code>enter</code>. Wait for the package list to appear.</li>
+<li><p>Type &quot;markdown&quot;, hit the arrow keys a couple times to select &quot;MarkdownEditing&quot;, and hit <code>enter</code>.</p>
+<p><img src="./assets/st-package-install-markdownediting.png" alt="Install MarkdownEditing Package"></p>
+</li>
+</ol>
+</li>
+<li><p>Restart Sublime Text.</p>
+</li>
+<li><p>Open a file with a .md (for Markdown) extension, or save a text file with a .md extension to see what happens. </p>
+<p> <img src="./assets/st-window-markdownediting-example.png" alt="A Markdown file"></p>
+</li>
+</ol>
+<p>Note that, after you restart Sublime Text, all the features of the MarkdownEditing package will apply only to Markdown files, such as those with a .md extension. Files with other extensions, such as .txt, will not be treated as Markdown files unless you do some more configuration. (I prefer to have .txt files <em>not</em> treated as if they are in Markdown, because oftentimes I work with data files with .txt extensions.)</p>
+<h2 id="markdownediting-features">MarkdownEditing features</h2>
+<p>The MarkdownEditing packages installs an eye-pleasing gray-on-gray theme for Markdown files in the editor. More importantly, it provides <em>inline formatting</em> of Markdown. That means the editor bolds headings and shows bold and italic for words wrapped in <code>*</code> or <code>_</code> characters. Sections marked off for block quotes and source code will be shaded differently, too. It will also intelligently handle bullet lists and numbered lists, which can save a lot of typing. On top of that, Sublime Text will double quotations, parentheses, underscores, and asterisks, too, to help make sure you close them as you type. </p>
+<p>In addition, MarkdownEditing package enables the following helpful keyboard shortcuts:</p>
+<ul>
+<li>Heading tags (<code>#</code>) can be auto-populated, on both blank lines and on selected text, by pressing <code>control+1</code>, <code>control+2</code>, and so on, all the way up to <code>control+6</code>.</li>
+<li>To bold or italicize some words, just select the text and type <code>*</code> (or <code>_</code>) once or twice; your selection will be surrounded with asterisks (or underscores) on both sides. (As of version 2.0.0 of the MarkdownEditing package, <code>control+b</code> and <code>control+i</code> also bold and italicize text. If you prefer using <code>control+b</code> to <a href="./2-05-how-to-set-up-sublime-text-for-markdown-export-to-word.html">build your Markdown files</a>), you will have to override <code>control+b</code> in your user key bindings file.</li>
+</ul>
+<h2 id="configure-fonts-for-markdown-editing-in-the-packages-user-settings-file">Configure fonts for Markdown editing in the packages user settings file</h2>
+<p>My preferred font on Windows for writing is Consolas (<a href="http://font.ubuntu.com/">Ubuntu Mono</a> runs a close second). I set this font for Markdown editing by editing the user preferences file that belongs to the EditingMarkdown package. You can open this file by going through the menus: Preferences &gt; Package Settings &gt; Markdown Editing &gt; Markdown settings &endash; Default. </p>
+<p><img src="./assets/st-menu-markdown-settings-user.png" alt="How to find the EditingMarkdown package&#39;s user settings file" title="EditingMarkdown package&#39;s user settings file"></p>
+<p>The initial user settings file will be blank. Here is my file. Note that you must keep to this format (called JSON), with all the curly braces, quotation marks, and so on.</p>
+<pre><code>{
+    &quot;font_face&quot;: &quot;Consolas&quot;,
+    &quot;font_size&quot;: 12,
+    &quot;save_on_focus_lost&quot;: true,
+    &quot;line_numbers&quot;: true
+}</code></pre>
+<p>The first two preferences I set in my user settings for Markdown files set the font face (that&#39;s the font name) and the font size. The third setting, &quot;save_on_focus_lost&quot;, causes Sublime Text to automatically save the file when I switch (<code>alt+tab</code>) to another application. The last setting ensures that I have line numbers in the left gutter, which is a personal preference of mine.</p>
+<h2 id="install-the-markdown-preview-package">Install the Markdown Preview package</h2>
+<p>Sublime Text can&#39;t offer a true live preview of Markdown, like <a href="http://markdownpad.com">Markdown Pad</a> does. This is not too big a limitation, though, because live preview becomes much less important once you are comfortable with Markdown syntax. You can, however, preview Markdown in an external browser by installing the &quot;Markdown Preview&quot; package.</p>
+<ol>
+<li><p>Using Package Control, (following the instructions above), install the package called &quot;Markdown Preview&quot;. That would be:</p>
+<ol>
+<li>Type <code>control+shift+p</code> to call up the Command Palette</li>
+<li>Type &quot;<code>install</code>&quot; and hit <code>enter</code>. Wait for the package list to appear.</li>
+<li><p>Type &quot;<code>markdown preview</code>&quot;, hit the arrow keys a couple times to select &quot;Markdown Preview&quot;, and hit <code>enter</code>.</p>
+<p><img src="./assets/st-package-install-markdown-preview.png" alt="Markdown Preview"></p>
+</li>
+</ol>
+</li>
+<li><p>Edit your &quot;Key Bindings - User&quot; file by using the menu items: Preferences &gt; Key Bindings - User (or use the Command Palette).</p>
+</li>
+<li><p>Add the following entry to your &quot;Key Bindings - User&quot; file. <em>If you have other key bindings in your file, be sure there are commas between them.</em></p>
+<pre><code> { &quot;keys&quot;: [&quot;alt+m&quot;], &quot;command&quot;: &quot;markdown_preview&quot;, &quot;args&quot;: {&quot;target&quot;: &quot;browser&quot;, &quot;parser&quot;:&quot;markdown&quot;} }</code></pre>
+</li>
+<li><p>(Optional) If you want to use <code>control+b</code> for the build command, instead of the MarkdownEditing bold command, add the following entry to your &quot;Key Bindings - User&quot; file. <em>If you have other key bindings in your file, be sure there are commas between them.</em></p>
+<pre><code> { &quot;keys&quot;: [&quot;ctrl+b&quot;], &quot;command&quot;: &quot;build&quot; }</code></pre>
+</li>
+<li><p>Save the key bindings file.</p>
+</li>
+<li><p>When working on a Markdown file, type <code>alt+m</code> to generate an HTML preview of your document that will open in your default browser. (You can also call the Markdown Preview command using the Command Palette. You hit <code>control+shift+p</code> to call up the Command Palette, then type &quot;<code>Preview</code>&quot;, select &quot;Markdown Preview: Python Markdown: Preview in Browser&quot;, and hit <code>enter</code>.)</p>
+</li>
+</ol>
+
+<div role="navigation" id="article_nav">
+<a id="previous" href="./2-03-windows-markdown-editors.html" title="Windows Markdown Editors">Previous</a>
+<a id="next" href="./2-05-how-to-set-up-sublime-text-for-markdown-export-to-word.html" title="How To Set Up Sublime Text for Markdown Export to Word">Next</a>
+</div>
+</div>
+<div class="social_navbar">
+<ul>
+<span>Share:</span>
+<li><a class="facebook" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html" target="_blank">Facebook</a></li>
+<li><a class="twitter" title="Share on Twitter" href="https://www.twitter.com/share?url=http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html" target="_blank">Twitter</a></li>
+<li><a class="reddit" href="http://www.reddit.com/submit" onclick="window.location='http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">Reddit</a></li>
+<li><a class="pinterest" href="//www.pinterest.com/pin/create/button/?url=http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html" target="_blank">Pinterest</a></li>
+<li><a class="linkedin" title="Share on LinkedIn" href="http://www.linkedin.com/shareArticle?mini=true&title=Plaintext Productivity%20%3E%20How To Set Up Sublime Text for Markdown Editing&url=http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+<footer>
+<div id="author">
+<address>Written by <a href="https://mjdescy.me">Michael Descy</a> &copy; 2013-2021 All Rights Reserved</address>
+</div>
+</footer>
+</body>
+</html>

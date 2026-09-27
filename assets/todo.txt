@@ -1,0 +1,13 @@
+(A) do online research +ResearchProject
+(B) write outline +ResearchProject
+(B) write first draft +ResearchProject
+(C) discuss first draft with boss +ResearchProject
+revise draft +ResearchProject
+write introduction and summary +ResearchProject
+make notes for oral presentation +ResearchProject
+send final draft to client +ResearchProject due:2013-12-01
+fill out timesheet +Admin
+return compliance form +ComplianceProject
+import dataset into ACL +DataWarehouseAudit
+x 2013-11-01 email availability to clients +Admin
+x 2013-11-02 call boss about +DataWarehouseAudit

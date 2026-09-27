@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://plaintext-productivity.net/sitemap.xml.gz
+Disallow: /assets/
+
