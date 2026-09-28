@@ -1,0 +1,14 @@
+<div role="main">
+<h1 class="{{ .page.Params.icon }}">{{ .page.Title }}</h1>
+<div class="callout">{{ .page.Params.callout }}</div>
+{{ .page.Content }}
+<div role="navigation" id="article_nav">
+{{- with .prev }}
+<a id="previous" href="{{ .RelPermalink }}" title="{{ if .IsHome }}{{ $.page.Site.Title }} | Home{{ else }}{{ .Title }}{{ end }}">Previous</a>
+{{- end }}
+{{- with .next }}
+<a id="next" href="{{ .RelPermalink }}" title="{{ if .IsHome }}{{ $.page.Site.Title }} | Home{{ else }}{{ .Title }}{{ end }}">Next</a>
+{{- end }}
+</div>
+</div>
+{{- partial "social-navbar.html" . -}}

@@ -1,0 +1,16 @@
+{{- $url := .page.Permalink -}}
+{{- $liTitle := printf "Plaintext Productivity > %s" .page.Title | urlquery | replaceRE `\+` "%20" -}}
+{{- $facebook := printf "https://www.facebook.com/sharer/sharer.php?u=%s" $url -}}
+{{- $twitter := printf "https://www.twitter.com/share?url=%s" $url -}}
+{{- $pinterest := printf "//www.pinterest.com/pin/create/button/?url=%s" $url -}}
+{{- $linkedin := printf "http://www.linkedin.com/shareArticle?mini=true&title=%s&url=%s" $liTitle $url -}}
+<div class="social_navbar">
+<ul>
+<span>Share:</span>
+<li><a class="facebook" title="Share on Facebook" href="{{ $facebook | safeURL }}" target="_blank">Facebook</a></li>
+<li><a class="twitter" title="Share on Twitter" href="{{ $twitter | safeURL }}" target="_blank">Twitter</a></li>
+<li><a class="reddit" href="http://www.reddit.com/submit" onclick="window.location='http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">Reddit</a></li>
+<li><a class="pinterest" href="{{ $pinterest | safeURL }}" target="_blank">Pinterest</a></li>
+<li><a class="linkedin" title="Share on LinkedIn" href="{{ $linkedin | safeURL }}" target="_blank">LinkedIn</a></li>
+</ul>
+</div>

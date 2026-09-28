@@ -1,0 +1,57 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ .page.Title }} | {{ .page.Site.Title }}</title>
+<meta name="keywords" content="{{ .page.Params.metaKeywords }}" />
+<meta name="description" content="{{ .page.Params.description }}" />
+<meta name="language" content="{{ .page.Site.Params.language }}" />
+<meta name="robots" content="index,follow" />
+<meta name="news_keywords" content="{{ .page.Site.Params.newsKeywords }}" />
+<meta name="google-analytics" content="{{ .page.Site.Params.googleAnalytics }}" />
+
+<link rel="canonical" href="{{ .page.Permalink }}" />
+<link rel="index" title="{{ .page.Site.Title }}" href="{{ .page.Site.BaseURL }}" />
+{{- with .prev }}
+<link rel="previous" title="{{ if .IsHome }}{{ $.page.Site.Title }} | Home{{ else }}{{ .Title }}{{ end }}" href="{{ .Permalink }}" />
+{{- end }}
+{{- with .next }}
+<link rel="next" title="{{ if .IsHome }}{{ $.page.Site.Title }} | Home{{ else }}{{ .Title }}{{ end }}" href="{{ .Permalink }}" />
+{{- end }}
+
+<link rel="author" type="text/html" href="{{ .page.Site.Params.authorURL }}" />
+<link rel="me" type="text/html" href="{{ .page.Site.Params.authorURL }}" />
+
+<meta property="og:url" content="{{ .page.Permalink }}" />
+<meta property="og:image" content="{{ .page.Site.Params.ogImage }}" />
+<meta property="og:description" content="{{ .page.Params.callout }}" />
+<meta property="og:title" content="{{ .page.Title }}" />
+<meta property="og:site_name" content="{{ .page.Site.Title }}" />
+<meta property="og:see_also" content="{{ .page.Site.BaseURL }}" />
+<meta property="fb:admins" content="{{ .page.Site.Params.facebookAdmins }}" />
+
+<meta itemprop="name" content="{{ .page.Site.Title }} | {{ .page.Title }}" />
+<meta itemprop="description" content="{{ .page.Params.description }}" />
+<meta itemprop="image" content="{{ .page.Site.BaseURL }}{{ .page.Site.Params.shareImage }}" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="{{ .page.Permalink }}" />
+<meta name="twitter:title" content="{{ .page.Site.Title }} | {{ .page.Title }}" />
+<meta name="twitter:description" content="{{ .page.Params.callout }}" />
+<meta name="twitter:creator" content="{{ .page.Site.Params.twitterCreator }}" />
+<meta name="twitter:image:src" content="{{ .page.Site.BaseURL }}{{ .page.Site.Params.shareImage }}" />
+<meta name="twitter:image:width" content="64" />
+<meta name="twitter:image:height" content="64" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="{{ .page.Site.Params.stylesheet }}">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '{{ .page.Site.Params.googleAnalytics }}', 'plaintext-productivity.net');
+ga('send', 'pageview');
+</script>

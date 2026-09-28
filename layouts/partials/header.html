@@ -1,0 +1,8 @@
+<header role="banner">
+<h1 id="title"><a href="/">{{ .page.Site.Title }}</a></h1>
+<ul class="navbar">
+{{- range .page.Site.Params.mainNav }}
+<li><a href="{{ .page }}">{{ .name }}</a>
+{{- end }}
+</ul>
+</header>

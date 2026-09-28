@@ -1,0 +1,72 @@
+baseURL = "http://plaintext-productivity.net/"
+languageCode = "en"
+title = "Plaintext Productivity"
+
+# The live site serves extensionless URLs as 404s, so the ".html" suffixes in the
+# original filenames are part of the public URL space and must be preserved.
+uglyURLs = true
+
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  description = "The Plaintext Productivity system is a smart way to get organized on Windows, using plaintext files as your trusted system and great software to make it easy."
+  newsKeywords = "plaintext, productivity system"
+  language = "EN"
+  authorName = "Michael Descy"
+  authorURL = "https://mjdescy.me"
+  copyrightYears = "2013-2021"
+  googleAnalytics = "UA-10779320-2"
+  twitterCreator = "mjdescy"
+  facebookAdmins = "772894805"
+  shareImage = "/assets/file.png"
+  ogImage = "/assets/file.svg"
+  stylesheet = "/css/all-1388369525000.css"
+
+  # Top navigation. Each entry points at the introduction page of a section.
+  [[params.mainNav]]
+    name = "Home"
+    page = "/"
+  [[params.mainNav]]
+    name = "Tasks"
+    page = "/1-00-tasks-introduction.html"
+  [[params.mainNav]]
+    name = "Notes and Drafts"
+    page = "/2-00-notes-and-drafts-introduction.html"
+  [[params.mainNav]]
+    name = "Documents and Files"
+    page = "/3-00-files-introduction.html"
+  [[params.mainNav]]
+    name = "Other Tips"
+    page = "/4-00-other-tips.html"
+  [[params.mainNav]]
+    name = "About"
+    page = "/5-00-about-me.html"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      # The original pages use straight quotes and apostrophes; without this
+      # Goldmark rewrites them to typographic curly equivalents.
+      [markup.goldmark.extensions.typographer]
+        disable = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      xhtml = false
+      # The content carries a little inline HTML (e.g. bold punctuation such as
+      # "+ProjectName", which markdown emphasis cannot express unambiguously).
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "github"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3

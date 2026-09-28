@@ -1,0 +1,39 @@
+{{- /*
+  Base template.
+
+  The original site walks pages in a single cycle: Introduction -> 1-00 -> ... ->
+  5-00 -> Introduction. Previous/next are resolved explicitly from the weight order
+  so that the wrap-around back to the home page is reproduced exactly.
+*/ -}}
+{{- $isHome := eq .RelPermalink "/" -}}
+{{- $rp := .Site.RegularPages -}}
+{{- $prev := false -}}
+{{- $next := false -}}
+{{- if $isHome -}}
+  {{- $next = index $rp 0 -}}
+{{- else -}}
+  {{- $idx := -1 -}}
+  {{- range $i, $p := $rp -}}
+    {{- if eq $p.RelPermalink $.RelPermalink -}}{{- $idx = $i -}}{{- end -}}
+  {{- end -}}
+  {{- $prev = $.Site.Home -}}
+  {{- $next = $.Site.Home -}}
+  {{- if gt $idx 0 -}}{{- $prev = index $rp (sub $idx 1) -}}{{- end -}}
+  {{- if lt $idx (sub (len $rp) 1) -}}{{- $next = index $rp (add $idx 1) -}}{{- end -}}
+{{- end -}}
+{{- $ctx := dict "page" . "prev" $prev "next" $next "isHome" $isHome -}}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype="http://schema.org/book" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"> <!--<![endif]-->
+<head>
+{{ partial "head.html" $ctx }}
+</head>
+
+<body>
+{{ partial "header.html" $ctx }}
+{{- block "main" $ctx }}{{ end -}}
+{{ partial "footer.html" $ctx }}
+</body>
+</html>
