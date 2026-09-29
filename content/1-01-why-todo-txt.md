@@ -21,7 +21,7 @@ My needs are pretty simple these days. I need my to-do list to be:
 
 I also need it:
 
-- To have good Windows support (I need this for work, where I am on a Windows machine all day with an out-of-date Internet Explorer I can't update, and intermittent periods without Internet connectivity, due to being out of the office)
+- To have good Windows support (I need this for work, where I am on a Windows machine all day)
 - Not to force me into a certain workflow or philosophy
 - Not to lock me to a certain vendor (companies go out of business or kill products all the time)
 
@@ -33,7 +33,7 @@ After wasting my 100,000th hour looking through productivity systems to find the
 
 ## Todo.txt {#todo-txt}
 
-Founding LifeHacker editor, programmer, and podcaster Gina Tripani created a free, open, text-based to-do list format—[Todo.txt](http://www.todotxt.com)—and let it loose upon the world. She and a community of developers created command-line tools and graphical programs for a variety of platforms that let you use a single, pretty simple text file for a to-do list. The catch: using the command line for to-dos is very geeky, and the [To-do.txt format](https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format) is a little stranger looking than your average knowledge worker would want to edit by hand all the time. The good news is that there are some free or very inexpensive tools to work with that format that work across all major platforms and devices.
+Founding LifeHacker editor, programmer, and podcaster Gina Tripani created a free, open, text-based to-do list format—[Todo.txt](https://www.todotxt.com)—and let it loose upon the world. She and a community of developers created command-line tools and graphical programs for a variety of platforms that let you use a single, pretty simple text file for a to-do list. The catch: using the command line for to-dos is very geeky, and the [To-do.txt format](https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format) is a little stranger looking than your average knowledge worker would want to edit by hand all the time. The good news is that there are some free or very inexpensive tools to work with that format that work across all major platforms and devices.
 
 ## What does it look like? {#what-does-it-look-like-}
 
@@ -66,4 +66,4 @@ Why is it good to use a text file for to-dos?
 - *Plaintext files are laughably small* by today's standards (a few kilobytes), compress down to almost nothing, and take up almost no space on your device.
 - You can *sync* between devices yourself, with Dropbox, SugarSync, BitTorrent Sync, and so on; you are not tied to a to-do app maker's proprietary sync.
 - *It is supported by a great community* who keep building apps and programming libraries that support it.
-- Gina Trapani herself heads open-source application development for *Android and iOS apps* (which are not free to buy, but are very inexpensive).
+- There are several iOS and Android apps that support the format. Heck, [I even wrote one](https://swiftodoapp.com)!

@@ -19,7 +19,7 @@ So, without the use of specialized software, I build a trusted system, accessibl
 
 ### What is it? {#what-is-it-}
 
-I lay out how to use Windows (Windows 7 or Windows 8's desktop mode), plus a few small programs, and a few new habits and behaviors to efficiently manage your work. Plaintext files are used for tasks, notes, drafts, and other files, such as a work journal, which will help you manage your work with minimal overhead.
+I lay out how to use Windows, a few small programs, and a few new habits and behaviors to efficiently manage your work. Plaintext files are used for tasks, notes, drafts, and other files, such as a work journal, which will help you manage your work with minimal overhead.
 
 ### Who is it for? {#who-is-it-for-}
 
@@ -31,7 +31,7 @@ This productivity system is meant for [knowledge workers](http://en.wikipedia.or
 
 ### Why is Windows important? {#why-is-windows-important-}
 
-Windows is a critical element in this system because it is hard to find good productivity software that runs on Windows, especially if you want to run it outside of a web browser. Windows, in my opinion, is far behind Mac OS X, iOS, and Android, in having thoughtfully designed and efficient software—both in general, and in particular for writing, organization, and task management. What is worse, if you work for a company, you probably have limited access to install or even download software, though it is often easier to install small programs, such as the ones I recommend, than you would be led to believe. (I have never had any problems installing most small or portable applications, and I usually can find a business justification for my favorite text editors, anyway.) It took me a tremendously long time, and a lot of trial and error, to find Windows productivity software I remained happy working with after the honeymoon period was over.
+Windows is a critical element in this system because it is hard to find good productivity software that runs on Windows, especially if you want to run it outside of a web browser. Windows, in my opinion, is far behind macOS, iOS, and Android, in having thoughtfully designed and efficient software—both in general, and in particular for writing, organization, and task management. What is worse, if you work for a company, you probably have limited access to install or even download software, though it is often easier to install small programs, such as the ones I recommend, than you would be led to believe. (I have never had any problems installing most small or portable applications, and I usually can find a business justification for my favorite text editors, anyway.) It took me a tremendously long time, and a lot of trial and error, to find Windows productivity software I remained happy working with after the honeymoon period was over.
 
 ## What's most important or unique about this system? {#what-s-most-important-or-unique-about-this-system-}
 
