@@ -1,5 +1,5 @@
 baseURL = "http://plaintext-productivity.mjdescy.me/"
-languageCode = "en"
+locale = "en"
 title = "Plaintext Productivity"
 
 # The live site serves extensionless URLs as 404s, so the ".html" suffixes in the

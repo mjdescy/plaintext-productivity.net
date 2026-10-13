@@ -12,9 +12,9 @@ RUN mkdir -p /tmp/opencode-install && \
 
 # Install Hugo Extended
 RUN mkdir -p /usr/local/hugo/bin && \
-    curl -fsSLO --compressed "https://github.com/gohugoio/hugo/releases/download/v0.134.3/hugo_extended_0.134.3_linux-amd64.tar.gz" && \
-    tar -xzf "hugo_extended_0.134.3_linux-amd64.tar.gz" -C /usr/local/hugo/bin && \
-    rm "hugo_extended_0.134.3_linux-amd64.tar.gz" && \
+    curl -fsSLO --compressed "https://github.com/gohugoio/hugo/releases/download/v0.162.0/hugo_extended_0.162.0_linux-amd64.tar.gz" && \
+    tar -xzf "hugo_extended_0.162.0_linux-amd64.tar.gz" -C /usr/local/hugo/bin && \
+    rm "hugo_extended_0.162.0_linux-amd64.tar.gz" && \
     chmod -R 755 /usr/local/hugo
 
 ENV PATH="/usr/local/hugo/bin:${PATH}"
