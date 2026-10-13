@@ -45,4 +45,4 @@ If you like or dislike my work here, you may want to understand the principles b
 
 ## About this site {#about-this-site}
 
-This site was built with [Punch](http://laktek.github.io/punch/) in HTML5 and CSS3 with modern browsers in mind. Icons came from [IcoMoon](http://icomoon.io/#icons). I wrote the content in [Sublime Text](http://www.sublimetext.com), [Editorial](http://omz-software.com/editorial/), and [ByWord](http://bywordapp.com), and did all the coding in Sublime Text. I used plaintext as much as possible, down to the scalable vector graphics used in the iconography.
+This site was built in HTML5 and CSS3 with modern browsers in mind. I wrote the content in [Sublime Text](http://www.sublimetext.com), [Editorial](http://omz-software.com/editorial/), and [ByWord](http://bywordapp.com), and did all the coding in Sublime Text. I used plaintext as much as possible, down to the scalable vector graphics used in the iconography. Icons came from [IcoMoon](http://icomoon.io/#icons).
