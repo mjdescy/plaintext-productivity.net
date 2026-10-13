@@ -23,7 +23,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   facebookAdmins = "772894805"
   shareImage = "/assets/file.png"
   ogImage = "/assets/file.svg"
-  stylesheet = "/css/all-1388369525000.css"
+  stylesheet = "/css/all.css"
 
   # Top navigation. Each entry points at the introduction page of a section.
   [[params.mainNav]]
